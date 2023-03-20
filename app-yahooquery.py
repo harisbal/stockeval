@@ -46,7 +46,7 @@ ticker_names = get_sp500_tickers()
 with st.sidebar:
     st.text("Parameters for DCF calculation")
     ticker_name = st.selectbox("Ticker", ticker_names)
-    estimate_type = st.selectbox("Estimate type", ["low", "avg", "high"])
+    estimate_type = st.selectbox("Revenue estimate type", ["low", "avg", "high"])
 
     required_return = (
         st.number_input("Required return (%)", min_value=2.0, max_value=100.0, step=1.0)
