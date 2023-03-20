@@ -49,7 +49,7 @@ with st.sidebar:
     estimate_type = st.selectbox("Estimate type", ["low", "avg", "high"])
 
     required_return = (
-        st.number_input("Required return (%)", min_value=1.0, max_value=100.0, step=1.0)
+        st.number_input("Required return (%)", min_value=2.0, max_value=100.0, step=1.0)
         / 100
     )
     perpetual_growth = (
